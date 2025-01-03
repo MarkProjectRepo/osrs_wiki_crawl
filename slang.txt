@@ -1,0 +1,676 @@
+07, 2007: Old School RuneScape
+"$11": The old monthly rate for membership in USD; often jokingly used on social media in minor complaints about the game implying that one is not getting their money's worth. Frequently accompanied by crab emojis (🦀).
+"$12.49": The previous monthly rate for membership in USD. Refer to $11 for usage.
+"$13.99": The current monthly rate for membership in USD. Refer to $11 for usage.
+2h: Two-handed sword or felling axe
+2+1: A method of boosting loot potential at Chambers of Xeric where 2 players will complete the raid and 1 alternate account will not participate in the fighting, but simply be in the room to boost the amount of reward points the other players can receive. This abbreviation can be used to describe any ratio of accounts used. Also known as "scaling" a raid.Alternatively, may be used for describing the number of accounts in boosting other bosses.
+2:1: A method used in high-level PvM combat where the player will deal damage to a boss 2 times while only allowing the boss to hit them 1 time in order to minimise the potential damage the boss can deal during a fight. This abbreviation can be used to describe any ratio of damage dealt by the player and the boss. These methods are usually performed by taking advantage of pathfinding mechanics to synchronize their attack speeds, such as walking under the boss for 1 or 2 game ticks so that the player is temporarily out of its attack range.
+200m: 200 million experience
+200m all: Obtaining 200 million experience in all skills
+2147m: 2,147,483,647 is the maximum number of items that can be in one item stack, whether they are bank notes or stackable items. In the context of coins, this is known as "max cash". This limit is set because RuneScape uses 32-bit signed integers to store values, which are unable to represent a higher number.
+2s2g: 2 sandstone, 2 granite; a Mining training method involving tick manipulation.
+1.5t, 2t, 2.25t, 2.5t, 3t, 4t: X-tick training; a method of training gathering skills sometimes involving tick manipulation. Fractional/decimal-based tick manipulation methods are a reflection of their effective-overall rate; 1.5 tick teaks refers to a 3 tick skilling cycle with 2 rolls, hence 1.5t.
+3a: Third Age, usually referring to Third Age equipment.
+3t4g: 3 tick, 4 granite; a method of training Mining by using a 3-tick cycle for tick manipulation. The "4g" refers to needing 4 granite rocks to continuously tick manipulate without needing to stop for rock respawns.
+3t4s: 3 tick, 4 sandstone; similar to 3t4g, but with sandstone instead.
+99: Maximum level for a skill; Skill mastery
+<><, ><>: Fishing
+(a): Autocast, activated
+Abby: Abyssal, Aberrant spectres, Abyssal whip, Abyssal demon
+AC: Anti-crash (usually for bosses or group Wilderness fights)
+ACB: Armadyl crossbow
+Acc: Account, Accuracy
+ACP: Armadyl chestplate
+ACS: Armadyl chainskirt
+Addy: Adamant
+ADS: Anti-dragon shield, Abyssal dagger (p++)
+AFK(ing): Away from keyboard—an account training while the person has gone away from the keyboard. Also used more broadly to refer to low intensity training.
+Aggro: Aggressiveness (referring to a monster's behaviour around players)
+Agi, Agil: Agility
+AGS: Armadyl godsword
+Air(s): Air rune
+AKD: A Kingdom Divided
+Alch(ing): Using either Low or High Level Alchemy to convert items into gold.
+Alt: Alternative account, generally the second account.
+Ammy: Amulet, Ammonite Crabs
+Anc(es), Ancy: Ancestral robes
+Ancients: Ancient Magicks
+Ang: Necklace of anguish
+ANGS, AGS2: Ancient godsword
+Anti: Antipoison, Anti-dragon shield or Antifire
+AntiD (shield): Anti-dragon shield
+AntiP, AP: Antipoison potion
+AoE: Area of effect—referring to attacks that affect multiple targets at once, such as chinchompas or Burst and Barrage spells from Ancient Magicks.May also refer to area effects such as darkness or the desert heat.
+AotD: Amulet of the damned
+Arc: Arcane spirit shield, Arceuus (house or spellbook), Arclight
+Ardy, Ard: Ardougne
+Arma, Arm: Armadyl, Kree'arra
+Asg: Asgarnia
+Atk, Att: Attack, attacker role in Barbarian Assault
+Aug: Augury
+Autoer, autoing: A bot user, using a bot
+Auto, AA: Auto Retaliate
+Auto [attack]: A regular attack in a PvM encounter, especially one with special attacks
+Ava's: Ava's attractor, accumulator, or assembler
+Avernic: Avernic defender
+Avs, Avies, Avys: Aviansie
+AWS: Ancient wyvern shield
+(b): Blessed (sickles)
+B, Bil: Billion, e.g. 1B = 1,000,000,000 coins.
+B2B, BTB: Bones to Bananas, Back to back
+B2P, BTP: Bones to Peaches
+B3B, B2B2B: Back to back to back
+BA: Barbarian Assault
+Bally: Ballista
+Bank made: An exclamation, usually sarcastic, about the value of a drop or other benefit. Particularly used of drops (such as dragon boots) which used to be extremely valuable and are now merely "nice".
+Bankstanding: AFKing or socialising with other players in a populated area such as a bank or the Grand Exchange.
+Barb: Barbarian, Barb-tail harpoon, Barbarian Village
+Barb Village, Barb Vil: Barbarian Village
+Barrage: Ice Barrage or any other Barrage spell in the Ancient Magicks spellbook.
+Baxe: Battleaxe
+BBD: Brutal black dragons
+Bbones: Big bones
+BCP: Bandos chestplate
+BCS: Beneath Cursed Sands
+BF: Blast Furnace, Amulet of blood fury
+Bgloves: Barrows gloves from Recipe for Disaster
+BGS: Bandos godsword
+BH: Bird house, Bounty Hunter
+BiS: Best-in-slot
+BJ(ing): Blackjacking, a way to train Thieving.
+BK: Bot kill(ing) (Player killing bots in the Wilderness)
+Blitz: Ice Blitz or any other Blitz spell in the Ancient Magicks spellbook.
+Blob(s): Jal-Ak, Tz-Kek
+Blood(s): Blood runes, Bloodvelds
+Blorva: Ancient blood ornament kit
+BM: Blast Mine
+Boss kc: Boss kill count
+Bowfa, Bofa: Bow of faerdhinen
+Box: Purposely being attacked by a friend or monster whilst in single combat in order to avoid being killed by a PKer.
+BP, Bpipe: Toxic blowpipe
+Brace: Bracelet
+Brassy: Verac's brassard
+BRD: Brutal red dragons
+Brew(s): Typically Saradomin brews or, rarely, Zamorak brews. Can also refer to the act of drinking a brew.
+Brid: A player who fights with more than one point on the Combat Triangle. See hybridding.
+Brim: Brimhaven, Brimstone
+B ring: Berserker ring
+Broads: Broad-tipped bolts (Ranged ammunition)
+Bryo: Bryophyta
+BS: Bow strings, bank sale, back stabber (BSer, usually used in PvP)
+B sale, Bsale: Bank sale (used when players have lots of stuff to sell)
+Bsk, Bskr, Berz: Berserker
+BSS: Blessed spirit shield, sometimes erroneously used for Saradomin's blessed sword.
+B staff: Battlestaff
+Btw: By the way. Also used as a joke to refer to Ironmen, example: "I'm a btw, btw" meaning "I'm an ironman, btw."
+Buckler: Twisted buckler
+Bulwark: Dinh's bulwark
+Burgh, Burg, BDR: Burgh de Rott
+Bwan: Karambwan
+(c): Corrupted
+CA(s): Combat Achievements
+Cammy, Cam: Camelot
+Cannon, Cann: Dwarf multicannon
+Cata: Catacombs of Kourend, Guardians of the Rift catalytic energy
+Cath, Cathy: Catherby
+Cav: Cavalier
+Cb/Cmb/Cbt/Cmbt (lvl), CL, Combat: Combat (level)
+Cball: Cannonball
+Cbow, CB: Crossbow, Crystal bow, Craw's bow
+CC: Chat-channel
+Cerb: Cerberus
+CG, CGaunt: Corrupted Gauntlet
+Chally: Crystal halberd
+Chain, CB: Chainbody
+Chanced: Receiving an attack from a boss or player when the attacker's max hit is above their target's current hitpoints, but the target does not die from the attack; leaving survival up to chance.
+Chargescape: Term that refers to an overabundance of items that degrade and requires charges to be used (eg. scythe of Vitur, crystal equipment, toxic blowpipe) — usually derogatory
+Cheese cape: Fire cape
+Chest, CP: Chestplate
+Chillpo: Chili potato
+Chins, Chinning: Chinchompas, or the act of hunting/using chinchompas.
+Chip damage: A term used to refer to small amounts of damage, usually dealt by NPCs that partially ignore protection prayers, that chip away at the player's health. It also refers to unavoidable damage taken regardless of the player's skillful inputs in such encounters.
+Chofl: A haughty way of expressing contempt towards another player. Variant of "Rofl".
+Choob: A high-level player who acts like a noob.
+Clue, Clueing: Clue scroll, attempting to get a clue scroll or doing Treasure Trails.
+CM, Challenge Mode: Chambers of Xeric Challenge Mode
+Col: Barbarian Assault Collector role
+Col log, CLog, CL: Collection Log
+Collat, Collatting: The act of borrowing an item whilst giving items of equal value in return as collateral. Used by players who don't want to sell their items to buy different items.
+Con, Cons: Construction
+Corp: Corporeal Beast
+CoX, Chambers: Chambers of Xeric
+(cr): Corrupt (Bounty Hunter ornament)
+Crash: Stealing a person or group's kills at a multicombat boss (like God Wars Dungeon, or Dagannoth Kings). See crashing.
+CW, CWA, CWars: Castle Wars, Clan Wars, change worlds (CW)
+D/Drag (weapon/armour name): Dragons, Dragon equipment
+D2H: Dragon 2h sword
+DA: Former Duel Arena, Desert amulets (e.g. DA4)
+Dag, Dagg: Dagannoth, dagger
+DB: Deathbanking, a method of banking/storing items in an Item Retrieval Service (IRS) by intentionally dying in an activity or to a boss which has said IRS mechanic. When done by Ultimate Ironman players, it's usually intentional.
+Dbolts, D bolts: Dragon bolts
+Dbones, D bones: Dragon bones
+Dbow: Dark bow
+DC: Disconnected, Death Charge
+Dced, Dc, Dc'd: Disconnected
+DCB: Dragon crossbow
+Dchain: Dragon chainbody
+Dclaws: Dragon claws
+DD: Asking players to stand on one specific tile (see Death dot below); Dragon dagger, Dragon defender
+Ddarts: Dragon darts
+Ddef: Dragon defender
+DDP: Dragon dagger (p)
+DDP+: Dragon dagger (p+) — sometimes mistakenly used instead of DDP++.
+DDS, DDP++: Dragon dagger (p++)
+Dead content: Content or aspects of gameplay that are rarely utilised due to being outclassed or giving no rewards.
+Death dot, DD: A multicombat player killing tactic where a number of players stand on the same square, making them appear as one player on the minimap.
+Def: Defence, Defender
+Def tank, Defence tank: Player with a Defence level of upwards of 90 or higher. Usually a player who is not pure and has Defence as one of their highest combat skills. See tanking.
+Dex: Dexterous prayer scroll
+DFH: Dragon full helm
+DFS: Dragonfire shield. Sometimes erroneously used for Anti-dragon shield.
+DFW, DFWard: Dragonfire ward
+Dh: Dharok the Wretched's equipment
+Dhally: Dragon halberd
+Dharok'ing, Dh'ing: Getting one's Hitpoints as low as possible while in full Dharok the Wretched's equipment to maximise damage inflicted in battle. Often accompanied with protection prayers.
+Dh axe: Dharok's greataxe
+DHCB, DHC: Dragon hunter crossbow
+Dhide, D hide, D'hide: Dragonhide
+DHL: Dragon hunter lance
+DK(s): Dagannoth Kings
+Dinh's, Dinny B, Dinny, Door: Dinh's bulwark
+Disgraceful: A full graceful outfit with intentionally mismatched and clashing colours, usually with a different colour for each piece
+Dlegs: Dragon platelegs
+DM: Deathmatch
+Dmed: Dragon med helm
+Dmg: Damage
+DMM: Deadman Mode
+Dolo: A method of boosting xp/hr or boss kills/hr by playing two accounts at once. Combination of the words "duo" and "solo".
+DP: Drop party, drop potential, death potential, door partner (to get past the doors in the Waterbirth Island Dungeon), Death Plateau
+Dplate: Dragon platebody
+DPS: Damage per Second (amount of damage dealt over time)
+Dry: To not obtain a desired drop for a long time, usually going over the item's drop rate.  Antonym: see spooned.
+DS: Dragon spear, Double shot (mainly used in reference to the dark bow and magic shortbow), dragon scimitar
+DS1/DS, DS2: Dragon Slayer I and Dragon Slayer II, respectively
+Dskirt: Dragon plateskirt
+DT1/DT, DT2: Desert Treasure I and Desert Treasure II - The Fallen Empire, respectively, DT2 can also refer to bosses or rings Desert Treasure II unlocks.
+Duel: Ring of dueling, former Duel Arena
+Duke: Duke Sucellus
+Dusts, Dusties: Dust devils
+DWH, DWar: Dragon warhammer
+(e): Enchanted (bolts), Enhanced
+Ecto: Ectofuntus, Ectophial
+Edge: Edgeville
+EHB: Efficient hours bossed: a measure of how many hours an account has spent continuously killing a boss at the average achievable kill time. Similar to EHP, if the average kill count of a certain boss in an hour is 35, each time a player kills 35 of said boss, they have gained 1 EHB, regardless of how long it actually took them to kill that amount of said boss.
+EHP: Efficient hours played: a measure of how many hours an account has spent gaining experience, assuming only the most efficient methods were used. For example, if the most efficient method of gaining experience in a certain skill grants 100,000 experience per hour, each time a player gains 100,000 experience in that skill, they have played 1 EHP (regardless of how many real hours it took them to get that amount of experience). Also used to refer to the best viable training method for a skill (for example, "3t4g is EHP"). See Experience rate.
+Eldritch, Eld: Eldritch nightmare staff
+Ele: Chaos Elemental, Guardians of the Rift elemental energy
+Ely: Elysian spirit shield
+Ess, Essence: Rune or pure essence (for variants with P).
+Etc, Etce: Etceteria
+EOC, EoC: Referring to Evolution of Combat or RuneScape 3
+EVoid: Elite Void Knight equipment
+(f): Fortified
+F2P(ers), FTP: Non-members (Free-to-play)
+Fally: Falador
+Fang: Osmumten's fang
+Farcaster: Someone who casts a "hold" spell and doesn't go face-to-face with another player (often used with Ancient Magicks' freeze spells).
+Fashionscape: A term jokingly used to describe RuneScape as a dress up game or in reference to worn outfits.
+FBow: Bow of faerdhinen
+FC, FCC: Friends Chat, another name for Chat-channel.
+FCape, FC: Fire cape
+Fe: An ironman, usually included in usernames of iron characters. Derived from the chemical symbol of iron.
+Fero(s): Ferocious gloves
+FFA: Free-for-all — an agreement when bossing with other players to have the person who gets a drop keep it for themselves.  Antonym: see splitting.
+FG, Faceguard: Neitiznot faceguard
+Fleshies: Flesh Crawlers
+Flip(ping): A term that refers to buying an item and then, within a short period of time, selling it for a profit.
+FM: Firemaking, Farming, Forum moderator
+FMod: Forum moderator
+Freeze, Frz: Ice spells
+Frem, Fremmy: Fremennik, usually referring to the Fremennik Diary.
+Froob: Free-to-play noob
+FSW: Fresh Start Worlds
+FT: Fighter torso, Fairy Tale quests (e.g. FT2), Fishing Trawler
+Full: Complete set that usually consists of a helm, shield, body piece and leg piece (such as full rune armour), or inventory being full (e.g. picking flax).
+Funning: Duelling for fun.
+Fury: Amulet of fury
+(g): Gilded, Gold trimmed
+G (weapon/armour name): Granite (e.g. G maul) or Guthan the Infested's equipment (e.g. G spear)
+Gains: Progress, particularly in training a skill.
+Gargs: Gargoyles
+Gaunt: The Gauntlet
+GB: God book
+GC: Barbarian Assault gamble count
+GD: Green dragons or Greater demons
+GDT: Gem Drop Table
+GDZ: Demonic ruins (Greater demon zone)
+GE, G/E: Grand Exchange
+GF: Giants' Foundry, Good fight (when used in PvP).
+GG: Grotesque Guardians, General Graardor, Good game.
+GH: Green Hill (Wilderness, popular player killing spot)
+GIM, GIMp, GI: Either a single player ("I play a GIM") or a collective team ("Our GIM") in Group Ironman Mode; the 'p' standing for player.
+Gl: Good luck
+GLog: Green log(ged); completing a section in the Collection Log turns the number green.
+Glory: Amulet of glory
+Gmaul: Granite maul
+Gold sink: An activity that removes a significant amount of an item (that holds a monetary value) or currency from the game. For example, training Prayer through the usage of a gilded altar is considered a gold sink.
+GotR: Guardians of the Rift
+GP: Gold pieces (i.e. coins), the primary currency used in Old School RuneScape.
+Green cash stack: A stack of 10 million or more coins (referring to the fact that the number on a stack of 10 million or more items is displayed in green)
+Grind: The time and energy that has to be put in to achieve a goal, typically one that's repetitive or tedious. For example, a player who hates doing quests might say they're on the quest grind while working towards the quest cape.
+GS: Godsword
+Guth, Gth: Guthix or Guthan's
+GWD, GW: God Wars Dungeon
+Gz, Grats: Congratulations
+(h#): Heraldic armour from Treasure Trails, the # being the design number.
+HA, High Alch: High Level Alchemy
+Hally: Halberd
+Harm, Harmo: Harmonised nightmare staff
+HB: Heavy ballista
+HC, HCIM: Hardcore Ironman
+HCGIM: Hardcore Group Ironman
+Hells, HH, Hellies: Hellhounds
+Helmet: Derogatory term for an Ironman. Comes from the Helmet icon that Ironmen have next to their names.
+Herb: Herblore
+Herby: Herbiboar
+Hilt: Godsword hilt
+Hills, Hillies: Hill giants
+HMT: Hard Mode Theatre of Blood. See Theatre of Blood/Hard Mode.
+Hop: To change worlds. See world switching.
+HP: Hitpoints—could be used to refer to a player's Hitpoints level.
+HPK: Honour PKing
+Huey: The Hueycoatl
+HS: Hallowed Sepulchre, HiScores
+HT: Home teleport
+Hybrid: A player who fights with more than one point on the Combat Triangle. See hybridding.
+(i): Imbued
+Ignore: Ignore list
+IM, Iron: Ironman
+Inf: Infinite, Infernal cape, Inferno, Infernal tools, Infinity robes
+Inq, Inquis: Inquisitor's armour
+Inv, Invent, Invy, Inven, Invo: Inventory
+Invoc(s), Invo: Tombs of Amascut invocations
+Jad: TzTok-Jad, Tzrek-jad, JalTok-Jad
+Jad hands: Hands shaking from nervousness, potentially causing misclicks (akin to fighting Jad for the first time)
+Jad phase: A boss phase which alternates between Magic and Ranged attacks (such as  Zulrah or Alchemical Hydra)
+Jadding: Extension of "Jad phase": a boss unpredictably and rapidly swapping between attack styles resulting in unavoidable damage (such as during Olm)
+Jamflex: Jagex with a negative connotation. "Jamflex, fix your servers! They're laggy."
+JMod: Jagex moderator
+Jordans: Primordial boots
+Justi: Justiciar armour
+K: Thousand, e.g. 1k = 1,000 coins, Karil's
+Kand, Kanda, Kan: Kandarin
+Karam: Karambwan, Karamja
+KBD: King Black Dragon
+KC: Kill count
+KCB, Kbow, KXB: Karil's crossbow
+Kelda, Keld: Keldagrim
+KG: Unit of Weight
+Kite: Kiteshield
+Kite/Kiting: Moving around to pull an enemy (usually an npc) into another area, "like a kite", especially when safespotting.
+KO, K0: Knock-out, instant kill
+Kodai: Kodai wand
+Korasi: Voidwaker
+(kp): Karambwan paste
+KPH: Kills per hour
+KQ: Kalphite Queen
+KSkirt: Karil's leatherskirt
+KTop: Karil's leathertop
+(l): Locked
+LA, Low Alch: Low Level Alchemy
+Lance: Dragon hunter lance
+Law(s): Law rune
+LB: Lightbearer
+LBA, LBBA, LBB: Leaf-bladed battleaxe
+LBS: Leaf-bladed sword
+LD: Lunar Diplomacy
+Leech: Someone who does nothing in a team-work based activity. Many look down upon these people because of the fact that they earn rewards without helping.
+Legs: Platelegs
+Leppy, Lepper: Woodcutting Leprechaun
+Lesser: Lesser demons
+Levi, Lev: Leviathan
+LF: Looking For:
+LFG: Looking For Group:
+LFR: Looking For Raid:
+(lg): Item sets containing platelegs.
+Life: Ring of life
+Limp: Limpwurt root
+LMS: Last Man Standing — a player-versus-player battle royale style minigame.
+Lob, Lobs, Lobby: Lobster
+Long: Longsword, longbow
+Looter: One that gathers on the spot of a kill in hopes they can get something valuable.
+Lova: Lovakengj, Lovakite
+Lumb, Lumby, Lummy: Lumbridge
+Lumby Teleport: Lumbridge Teleport, also used sarcasticly to refer to a very quick death, often in PvP situations
+Lvl, Lv: Level
+(m): Mature
+M, Mil: Million (e.g. 6M = 6,000,000)
+MA: Mage Arena, located in the deep wilderness; not to be confused with the Mage Training Arena (MTA).
+MA1, MA2: Mage Arena I and Mage Arena II miniquests, respectively, sometimes referring to the god capes obtained from the miniquests.
+Mage, Mager: Referring to the Magic skill, a player who uses Magic more than Ranged or Melee; an NPC wizard; a player with 99 Magic; a player currently using Magic for combat.
+Mage bank: The bank located within the Mage Arena in Deep Wilderness.
+Mage tank: Player with high Magic and Defence.
+Mager: Ket-Zek, Jal-Zek
+Main: A player's main character; in the context of PVP, an account with no restrictions imposed on its combat stats.
+Mass(ing): Fighting a boss or raid (such as the Corporeal Beast or the Chambers of Xeric) alongside many other players (either strangers or clan members). Unique drops are usually considered free for all. Commonly done either for fun or for a slim chance at profit.
+Mats: Raw materials used in processing skills (eg. ores, logs, Farming crops, Herblore ingredients)
+Maul: Granite maul, Obsidian maul
+Mauler: Player who uses a Granite maul, or Obsidian maul as their weapon.
+Max, Maxed, Maxing: To reach level 99 in all skills ("I maxed yesterday"); to deal the maximum amount of damage in one hit ("my max is 32 with this gear"); a player with a combat level of 126 (often referred to as "maxed cb" or "max melee"). Is also applied to restricted accounts (such as "max med" or "maxed pure").
+MB: Mage Arena bank or "my bad", meaning sorry.
+MD: Melee distance
+Med (helm): Medium helmet
+Med level: Short for "medium level" (content, gear, mobs, etc); in context of PVP, an account with between 50-75 attack and/or defence.
+Mem(s), Memb(s): Member
+MEP1/ME1, MEP2/ME2: Mourning's End Part I and Mourning's End Part II, respectively
+Merching, Merch, Merchanting: Usually means the buying of an item then selling that same item later on in order to make a profit.
+Meta: "Most Effective Tactic Available" or the dominant strategy, referring to the best or most popular method used in a scenario such as skill training, bossing, etc.
+MH: Mahogany Homes, Medium helmet
+Mith: Mithril
+MLM: Motherlode Mine
+MM1/MM, MM2: Monkey Madness I and Monkey Madness II, respectively
+Money snake, Money dragon: Terms for Zulrah and Vorkath, respectively; refers to their status as consistent moneymaking methods.
+Mory: Morytania
+Mossies: Moss giants
+MSB, MSBi: Magic shortbow and Magic shortbow (i), respectively
+MTA: Mage Training Arena, north of the Emir's Arena
+Mud(s): Mud runes
+Multi: Multicombat area
+Muta, Mutta, Mut: Muttadiles, Mutagen
+MVP: Most Valuable Player, an award given to the best player of a team.
+Nat(s): Nature rune
+Nech: Nechryael
+Nerd-logged: Being forcibly logged out after 6 hours of continuous play on a world.
+Nezzy, Nez, Neit, Neitz: Neitiznot, usually referring to the Helm of Neitiznot.
+NH, NHer: No Honour—a player who wins by any means necessary in PvP.
+Nibbler(s): Jal-Nib
+Nitro: Nitroglycerin
+NM: The Nightmare
+NMZ, NZ: Nightmare Zone
+No arm(ing): Fighting without armour.
+Noob: New player, derived from newbie.
+Noodle: To repeatedly miss/deal no damage to an enemy.
+Nylo: Nylocas
+(o): Offensive (blackjacks)
+Obby, Obi, Oby: Obsidian, as in TzHaar items; Wilderness Obelisks.
+Obby mauler, Obby pure: Obsidian mauler, a type of combat pure with low Attack and high Strength.
+Occult, Occ: Occult necklace
+OD: Overly Draining, a Tombs of Amascut invocation.
+Off-tick: Attacking an NPC in a different tick than they are.
+Oggies: Ogresses, primarily Ogress Warriors.
+One-iteming (1-iteming): Using a single item (usually weapon) to minimise risk when player-killing.
+Orn, (or): Ornamented
+OSB: OSBuddy
+OSRS: Old School RuneScape
+Ovl(s): Overload potions.
+(p), (p+), (p++): Poisoned
+P#: Phases, usually of a boss.
+P2P(er): Members (Pay-to-Play)
+Pass: Password, Shantay Pass, Underground Pass
+PB: Personal best, i.e. best completion time of a boss. Also refers to platebodies.
+PC: Pest Control, Private chat, Price check
+Pegs, Peggies: Pegasian boots
+P ess: Pure essence
+Ph, Phat: Partyhat
+Phas: Port Phasmatys
+Pile, Piling: Multiple people attacking the same opponent.
+Pick: Pickaxe
+PID: Player identification number
+Pisc: Piscarilius, Piscatoris Fishing Colony
+PJ, PJer, PJing: Pile jumping. The act of interrupting a player vs player fight by attacking one or both of the players, or attacking the winner of a fight, aiming to get the loot pile.
+PK, PKer, PKing: Player killer/Player killing. Someone who is fighting other players - specifically in the Wilderness or other high risk PvP areas.
+Plate, Pl8: Platebody
+Plank: To die.
+Pleae, Pls, Plz, Plox, Pl0x: Please
+PM: Private message, Moons of Peril
+PMod: Player Moderator
+PNeck: Phoenix necklace
+PNM: Phosani's Nightmare
+Poacher: Someone who steals PvM kills, or hoards one NPC to themselves.
+POH: Player-owned houses
+Pot, Pots: Potion, lobster pot, pot. Can also be used to inform other players in a group to drink their potions ("pot up"), or furthermore used for preparing/asking to do something (e.g. "wanna pot tob?").
+Potter: Someone who uses potions to fight.
+PPot, Pray Pot: Prayer potion
+PP: Pyramid Plunder, Pickpocketing, Prayer points.
+Prepot(ing): Drinking potions at bank before taking supplies and going to a boss fight or slayer task in order to gain their bonus while saving inventory space.
+Prif, Priff: Prifddinas
+Prims: Primordial boots
+Prod: Someone that relies on a certain weapon or special attack when Pking/PvPing to defeat their opponent. For example, "AGS prod".
+Prossy: Proselyte armour
+Prot: Protection prayers, Protect Item
+PS: Potion share
+Pure: Someone who trains only one type of skill; someone who only trains combat skills, or only non-combat skills. See Combat pure, Defence pure, or Skill pure.
+Pure set: A potion set that consists of only a Super attack and a Super strength, without a Super defence. Also refers to a dragonhide armour set minus the body.
+Purple, Purp: Unique drops from raids. Derived from the purple beam above the reward chest in the Chambers of Xeric and the purple outline of the reward chest in the Theatre of Blood that occur whenever a player receives a unique drop.
+PW, Pass: Password
+QC, QPC: Quest point cape
+QoL: Quality-of-life - refers to an update that makes a tedious task easier.
+QP(s): Quest points, Quick prayers
+QS: Quick Start, phrase used before Barbarian Assault waves to start before the 60 second wait.
+Quadrolo: A method of boosting xp/hr or boss kills/hr by playing four accounts at once. Combination of the words "quadruple" and "solo".
+Quintolo: Another method of boosting xp/hr or boss kills/hr by playing five accounts at once. Combination of the words "quintuple" and "solo".
+(r): Recoil
+R2H: Rune 2h sword
+Rags, Ragging, Raggers: Term often used in PKing for someone with inferior or cheap gear, sometimes synonymous with griefing.
+Raids 1, Raids 2, Raids 3: Chambers of Xeric, Theatre of Blood and Tombs of Amascut, respectively
+Rambo, Rambo spec, Rambo special: Term often used in pking for a high-hitting special attack, or a combination of regular hits that surprises the opponent. A word derived from John Rambo, a muscular hard lined character from the movie, First Blood.
+Range tank: A player who focuses mainly on Ranged and Defence.
+Rangers, Rngrs: Ranger boots, Tok-Xil, Jal-Xil
+Rapier, Rap: Ghrazi rapier
+RC(ing): Runecraft
+RCB: Rune crossbow
+RC Pker: A runecrafter player killer. Someone who kills runecrafters on their way to the Abyss runecraft area.
+RD, R drag: Rune dragons
+RDT: Rare drop table
+Rebuild: To liquidate one's bank in order to buy a strong, versatile weapon (such as the bow of Faerdhinen) which can make the money back.
+Recoil: Ring of recoil
+Red barred: Term used to describe a player/NPC with so little Hitpoints that its health bar is almost completely red. For much of RuneScape 2, entities with large amounts of hit points could display a solid red health bar when they only had a few hit points. This was what lead to the phrase being coined.
+Red helm: A Hardcore Ironman or Group Ironman.
+Req(s): Requirement(s)
+Rev(s): Revenants
+Rex: Dagannoth Rex
+RFD: Recipe for Disaster
+RFH: Rune full helm
+Rig, Rigo: Rigour
+Rim, Rimmy: Rimmington
+RL: RuneLite
+RMH, Rmed: Rune med helm
+RNG: Random number generator
+Robin: Robin Hood hat
+RoL: Ring of life
+RoS: Ring of suffering
+RotG: Ring of the gods
+RoW: Ring of wealth
+RPB: Rune Platebody
+RS: RuneScape
+RS2: RuneScape 2
+RS3: The current main branch of RuneScape, RuneScape 3.
+RSC, RS1: RuneScape Classic
+RSHD: RuneScape HD, the era of RuneScape from mid 2008 to 2013; sometimes erroneously used to refer to the 117 HD RuneLite plugin or HDOS.
+RSN: RuneScape character name
+RSOF: RuneScape Official Forums
+Runner: One who delivers items (typically for training processing skills, for example bones or pure essence) to a player, often for a fee.
+Rush, Rusher: A PKing tactic, in which a player is attacked directly after finishing a fight by someone using a high-powered spec weapon (eg. Dragon claws, Armadyl godsword). See rushing.
+RWH: Rune warhammer
+RWT: Real world trading
+Safer: Someone who heals at a life points value that is greater than the maximum hit of the opponent or in some cases eating to full Hitpoints. Typically used in the context of one-on-one PvP. Although, some use it in multi-way combat incorrectly.
+Salad blade: Blade of saeldor
+Salad robes: Xerician robes
+Salve: Salve amulet
+Sand casino: Former Duel Arena, particularly when used for staking wealth
+Sang: Sanguinesti staff
+Santa: Santa hat
+Saph: Sapphire
+Sara: Saradomin, Commander Zilyana (Usually referred to as Sara Boss)
+Sarach, Sarac: Sarachnis
+SBS: Spellbook Swap, Saradomin's blessed sword
+SC: Skill capes
+Scav: Scavenger
+SCB, SCP: Super combat potion
+Scimmy, Scim, Skim, Skimmy: Scimitar
+Scy: Scythe, mostly referring to a Scythe of vitur
+Seers: Seers' Village, Seers ring
+Sep, Sepul, Sepu: Hallowed Sepulchre
+Serp: Serpentine helm
+SGS: Saradomin godsword
+Shadow, SoT, ShaT: Tumeken's shadow
+Shilo: Shilo Village
+Shopscape: Gameplay revolving around repeated use of in-game shops, usually derogatory
+Short: Shortsword, Shortbow
+(sk): Item sets with plateskirts.
+Skirt: Plateskirt
+Skiller: Someone who trains non-combat skills (can be any Combat level)/more commonly someone who trains non-combat skills primarily or exclusively. See Skill pure.
+Snipe: To target and gain a desirable item by outbidding or beating another player to it. See Sniping.
+Snowflake: Account played with some sort of self-imposed limitation, such as being locked to a specific region or only able to train one skill at a time.
+SoA: Shield of Arrav
+SoL: Staff of light
+Solid(s): Solid food — food that incurs a 3 tick attack delay when eaten. This applies to most foods in the game, such as sharks.
+SoS, Stronghold: Stronghold of Security
+Sot, Sote: Sotetseg
+SotD: Staff of the dead
+SotE: Song of the Elves
+SotF: Sins of the Father
+SotN: Secrets of the North
+Spam: To click rapidly in succession, usually on a single target (i.e. an item or player). Alternatively, to send a chat message multiple times in a similarly repetitive manner ("They were spamming their Clan advertisement at the Grand Exchange all day!").
+Spec: Special attack, Spectral spirit shield
+Split(ting): An agreement when bossing with other players to have the person who gets a drop sell it and (usually) evenly split the gold among them.  Antonym: see free-for-all.
+Spoon, Spooned, Spooning: To obtain a rare or desirable drop (such as a pet) with relatively little time/effort expended, originating either from "spoonfed" or "silver spoon".  Antonym: see dry.
+Sq: Square shield
+SS: Saradomin sword, screenshot
+SSC: Stronghold Slayer Cave
+Staff: Usually referring to the Tumeken's shadow.
+Stam (pot): Stamina potion
+Str: Strength
+Suff, Suffering: Ring of suffering
+Sulli(s), Sully, Sullies: Sulliuscep
+Super AP: Superantipoison
+Super sets (Sup att/atk, Sup def, Sup str): Super attack potion, Super defence potion, Super strength potion
+SW: Soul Wars
+Swamp: Trident of the swamp
+Sword: Swordfish, sword, or longsword.
+Swordy: Swordfish
+(t): Trimmed
+Tab: A teleport tablet
+Tag: Attacking a monster first.
+Tali: Talisman
+Tanz: Tanzanite fang
+Tass, Tassets, Tassy, Tassies: Bandos tassets
+Tb, Tb'd: Tele Block, reference to someone getting teleport blocked, mainly used during PKing. Also: Trouble Brewing
+TB, TBL, TBZ: Trailblazer League
+TBow: Twisted bow
+TBP: Toxic blowpipe
+TBuck: Twisted buckler
+Tears, ToG: Tears of Guthix
+Tek: Tekton
+Tent: Abyssal tentacle or Kraken tentacle
+Thermy: Thermonuclear smoke devil
+TL: Twisted League
+ToA: Tombs of Amascut
+ToB: Theatre of Blood
+Todt: Wintertodt
+Tome, ToF: Tome of fire
+Torm, Tor: Tormented bracelet
+Torso: Fighter torso
+Tort, Torture: Amulet of torture
+Total, TL: Total level or total experience
+TP, Tele: Teleport
+Transmog: A pet, piece of armour, or weapon that has been cosmetically altered. Example: Dragon full helm (g) or JalRek-Jad
+Trolo: A method of boosting xp/hr or boss kills/hr by playing three accounts at once. Combines the words "trio" and "solo".
+True tile: The actual location where the game considers the player to be compared to where the game's graphics depict them. A discrepancy between where a player appears to be and where the game considers them to be is caused by the fact that all animations are delayed by one game tick, causing animations to essentially be played slightly in advance to look smooth.
+TSotD, TSoD: Toxic staff of the dead
+TT: Treasure Trails
+TTK: Time to kill, the time it takes to kill a specific monster.
+Tupo: Tuna potato
+Ty4r, Ty4rs: Thank you for raids/rounds, said at the end of a group session
+(u): Unstrung, unenchanted, uncharged, etc.
+UGIM: Unranked Group Ironman
+UIM: Ultimate Ironman
+(unf): Unfinished
+Unid(s): Unidentified minerals, Grimy herbs
+Vambs, Vams: Vambraces, usually referring to the Zaryte vambraces.
+Vang(s): Vanguards
+Vard, Vardo: Vardorvis
+Varr: Varrock
+Vbow, V bow: Venator bow
+Velds: Bloodvelds
+Vene: Venenatis
+Veng(e): Vengeance or Vengeance Other
+Ver, V (Armour): Verac the Defiled's equipment, i.e. V Brassy
+Verz: Verzik Vitur
+Vesp: Vespula
+Vis(sy): Visage, usually referring to a Draconic Visage
+VLS: Vesta's longsword
+VM: Volcanic Mine
+Void, Voider: A type of account build or a player, especially a player killer wearing Void Knight or Elite Void Knight equipment.
+Voli, Volly, Vola: Volatile nightmare staff
+Vork: Vorkath
+VSkirt: Verac's plateskirt
+Vuln: Vulnerability
+VV: Vile Vigour
+VW: Voidwaker
+(w): Watered
+W#: World #, where # is the world in question. e.g. "W360"
+Ward: Elidinis' ward
+WC(ing): Woodcutting, wrong chat (WC)
+Wealth: Ring of wealth
+Welfare: Using cheap gear with minimal to no risk, usually in a PvP scenario.
+Wep(s): Weapons
+WGS: While Guthix Sleeps
+WGWD: Wilderness God Wars Dungeon
+WH, War: Warhammer
+Whip: Abyssal whip
+Wildy, Wild: Wilderness
+Whisp, Wisp, Whispy: The Whisperer
+Wipe: To fail, typically in reference to a whole team dying within a raid.
+Wizzy: Wizard, Wizard robes
+Woox walking: Walking in a specific pattern while fighting Vorkath during his poison special attack in such a way to continue to hit him while avoiding poison splats, popularized by Runescape player Woox. Detailed explanation here
+WT: Wintertodt
+Xarp: Xarpus
+Xbow, X-bow: Crossbow (weapon)
+XD, Xd, X|): An emoticon used to convey excitement or laughter. The latter expression ("Xd") is much more common in-game as the game's chat does not naturally support sequential capitalization.
+X-logging: X-logging
+XP/H, XPH: Experience per hour
+Yan: Yanille
+Yh: Yes/Yeah
+Z (weapon/armour name): Zamorak, Zaryte
+Zalc: Zalcano
+Zammy: Zamorak, K'ril Tsutsaroth
+Z book, Zammy book: Unholy book
+ZCB, ZBow: Zaryte crossbow
+Zenny, Zenn: Zenyte, usually referring to Zenyte shards.
+Zerk, Zerker(s): Berserker
+ZGS: Zamorak godsword
+Zik: Verzik Vitur
+Zily, Zilly, Zilya: Commander Zilyana
+ZMI: Ourania altar
+Z spear, Zammy spear, ZS: Zamorakian spear
+Zuk: TzKal-Zuk
+Zul, Zully: Zulrah
+ZVambs, ZVams: Zaryte vambraces
+: #
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
