@@ -10,3 +10,4 @@ wheels/
 .venv
 *.html
 .DS_Store
+visited_pages.json
