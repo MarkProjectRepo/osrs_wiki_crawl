@@ -6,10 +6,13 @@ import time
 from bs4 import BeautifulSoup
 import json
 import argparse
+from wiki_parser import parse_wiki_page
 
 class WikiCrawler:
     def __init__(self, output_dir="wiki_pages", max_pages=None, threads=16, delay=0.5):
         self.output_dir = output_dir
+        self.html_dir = os.path.join(output_dir, "html")
+        self.markdown_dir = os.path.join(output_dir, "markdown")
         self.visited_file = os.path.join(output_dir, "visited_pages.json")
         self.visited_pages = self.load_visited_pages()
         self.base_url = "https://oldschool.runescape.wiki"
@@ -18,8 +21,9 @@ class WikiCrawler:
         self.delay = delay
         self.pages_downloaded = 0
         
-        # Create output directory if it doesn't exist
-        os.makedirs(output_dir, exist_ok=True)
+        # Create output directories if they don't exist
+        os.makedirs(self.html_dir, exist_ok=True)
+        os.makedirs(self.markdown_dir, exist_ok=True)
         
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -50,10 +54,11 @@ class WikiCrawler:
             
             # Create a proper filename from the URL
             page_name = unquote(url.split('/w/')[-1])
-            filename = os.path.join(self.output_dir, f"{page_name}.html")
+            html_filename = os.path.join(self.html_dir, f"{page_name}.html")
+            md_filename = os.path.join(self.markdown_dir, f"{page_name}.md")
             
-            # Skip if file already exists
-            if os.path.exists(filename):
+            # Skip if both files already exist
+            if os.path.exists(html_filename) and os.path.exists(md_filename):
                 self.visited_pages.add(url)
                 return
             
@@ -69,9 +74,18 @@ class WikiCrawler:
             main_content = soup.find('div', id='content')
             
             if main_content:
-                # Save only the main content
-                with open(filename, 'w', encoding='utf-8') as f:
+                # Save the HTML content
+                with open(html_filename, 'w', encoding='utf-8') as f:
                     f.write(str(main_content))
+                
+                try:
+                    # Convert to markdown and save
+                    markdown = parse_wiki_page(str(main_content))
+                    with open(md_filename, 'w', encoding='utf-8') as f:
+                        f.write(markdown)
+                except Exception as e:
+                    print(f"Error converting {page_name} to markdown: {str(e)}")
+                
                 print(f"Downloaded: {page_name}")
                 self.pages_downloaded += 1
             else:
