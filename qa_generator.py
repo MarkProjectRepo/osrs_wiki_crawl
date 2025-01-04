@@ -24,7 +24,7 @@ class QAGenerator:
         """Send a query to Ollama API and return the response"""
         try:
             response = requests.post(
-                "http://localhost:11434/api/generate",
+                "http://10.0.0.9:11434/api/generate",
                 json={
                     "model": self.model,
                     "prompt": prompt,
@@ -42,27 +42,32 @@ class QAGenerator:
 
     def assess_document_richness(self, content):
         """Determine number of questions based on document length and content richness"""
-        # Get content length
-        content_length = len(content)
+        # Count words (more accurate than bytes)
+        words = len(content.split())
         
-        # Base scaling factors
-        if content_length < 500:  # Very short articles
+        # Scale based on actual document distribution:
+        # - < 50 words (10th percentile): 1 question
+        # - 50-160 words (10th-50th): 2 questions
+        # - 160-325 words (50th-75th): 3 questions
+        # - 325-718 words (75th-90th): 4 questions
+        # - > 718 words (>90th): 5 questions
+        if words < 50:
             base_questions = 1
-        elif content_length < 2000:  # Short articles
+        elif words < 160:
             base_questions = 2
-        elif content_length < 5000:  # Medium articles
-            base_questions = 4
-        elif content_length < 10000:  # Long articles
-            base_questions = 6
-        else:  # Very long articles
-            base_questions = 8
+        elif words < 325:
+            base_questions = 3
+        # elif words < 718:
+        #     base_questions = 4
+        else:
+            base_questions = 3
         
-        # Add randomness (±1 question, but stay within 1-10 range)
+        # Add slight randomness (±1 question, but stay within 1-6 range)
         import random
         variation = random.randint(-1, 1)
-        num_questions = max(1, min(10, base_questions + variation))
+        num_questions = max(1, min(3, base_questions + variation))
         
-        print(f"Content length: {content_length} bytes -> {num_questions} questions")
+        print(f"Word count: {words} -> {num_questions} questions")
         return num_questions
 
     def generate_qa_pairs(self, content, num_questions):
@@ -186,4 +191,4 @@ def main():
     generator.generate_dataset()
 
 if __name__ == "__main__":
-    main() 
+    main()
