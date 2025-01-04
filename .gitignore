@@ -13,3 +13,5 @@ wheels/
 *.csv
 .DS_Store
 visited_pages.json
+*.xml
+*.gz
