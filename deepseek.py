@@ -48,7 +48,7 @@ class DeepSeek:
 
 
 if __name__ == "__main__":
-    with open("/Users/marktraquair/Development/osrs_wiki_crawl/wiki_pages/markdown/Ancient_Magicks.md", "r") as f:
+    with open("./wiki_pages/markdown/Ancient_Magicks.md", "r") as f:
         content = f.read()
     num_questions = 10
     deepseek = DeepSeek()

@@ -6,7 +6,7 @@ def read_html_file(file_path):
 
 def main():
     # Read the Abyssal whip page
-    html_content = read_html_file('wiki_pages/Abyssal_whip.html')
+    html_content = read_html_file('wiki_pages/html/Amulet_of_power.html')
     
     # Parse and convert to markdown
     markdown = parse_wiki_page(html_content)

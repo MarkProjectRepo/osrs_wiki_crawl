@@ -19,6 +19,7 @@ from datetime import datetime, timedelta
 import random
 from collections import deque
 import threading
+from threading import Lock
 
 class WikiCrawler:
     def __init__(self, output_dir="wiki_pages", max_pages=None, threads=16, delay=0.5):
@@ -28,18 +29,29 @@ class WikiCrawler:
         self.dataset_dir = "dataset"
         self.sitemap_file = os.path.join(self.dataset_dir, "NS_0-0.xml.gz")
         self.visited_file = os.path.join(output_dir, "visited_pages.json")
-        self.visited_pages = self.load_visited_pages()
+        
+        # Initialize thread-safe primitives
+        self.error_lock = threading.Lock()
+        self.visited_lock = threading.Lock()
+        
+        # Initialize shared state
+        self.visited_pages = set()
+        self._load_visited_pages()
+        print(f"Number of visited pages: {len(self.visited_pages)}")
+        
         self.base_url = "https://oldschool.runescape.wiki"
         self.sitemap_index_url = "https://oldschool.runescape.wiki/images/sitemaps/index.xml"
         self.max_pages = max_pages
         self.threads = threads
         self.delay = delay
         self.pages_downloaded = 0
+        self._counter_lock = Lock()
         
         # Create output directories if they don't exist
         os.makedirs(self.html_dir, exist_ok=True)
         os.makedirs(self.markdown_dir, exist_ok=True)
         os.makedirs(self.dataset_dir, exist_ok=True)
+        os.makedirs(os.path.dirname(self.visited_file), exist_ok=True)
         
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -49,15 +61,46 @@ class WikiCrawler:
         self.request_window = 60  # 1 minute window
         self.max_requests = 300   # Max requests per window
         self.request_times = deque(maxlen=self.max_requests)
-        self.request_lock = threading.Lock()
+        self.last_request_time = time.time()
+        self.min_request_interval = self.request_window / self.max_requests  # Minimum time between requests
         
         # Add backoff parameters
         self.min_delay = delay
         self.max_delay = 30  # Maximum delay between requests
         self.backoff_factor = 2
         self.error_counts = {}
-        self.error_lock = threading.Lock()
-    
+        
+        self.batch_size = 10  # Number of URLs to process per batch
+        
+        self._thread_local = threading.local()
+        self._last_save_time = time.time()
+        self._save_interval = 60  # Save every minute
+
+    def _load_visited_pages(self):
+        """Load the set of visited pages from disk"""
+        try:
+            if os.path.exists(self.visited_file):
+                with self.visited_lock, open(self.visited_file, 'r') as f:
+                    self.visited_pages.update(json.load(f))
+        except Exception as e:
+            print(f"Error loading visited pages: {str(e)}")
+
+    def save_visited_pages(self):
+        """Save the visited pages to disk periodically"""
+        current_time = time.time()
+        if current_time - self._last_save_time < self._save_interval:
+            return
+        
+        try:
+            with self.visited_lock:
+                temp_file = self.visited_file + '.tmp'
+                with open(temp_file, 'w') as f:
+                    json.dump(list(self.visited_pages), f)
+                os.replace(temp_file, self.visited_file)
+                self._last_save_time = current_time
+        except Exception as e:
+            print(f"Error saving visited pages: {str(e)}")
+
     def check_and_download_latest_sitemap(self):
         """Check if we have the latest sitemap and download if needed"""
         try:
@@ -110,49 +153,41 @@ class WikiCrawler:
             ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
             
             # Extract all URLs
-            urls = []
+            urls = set()
             for url in root.findall('.//sm:url/sm:loc', ns):
                 page_url = url.text
                 # Only include wiki pages, exclude special pages, etc.
                 if '/w/' in page_url and not any(x in page_url.lower() for x in [
                     'special:', 'file:', 'template:', 'category:', 'talk:', 'user:'
                 ]):
-                    urls.append(page_url)
+                    urls.add(page_url)
             
             return urls
             
         except Exception as e:
             print(f"Error parsing sitemap: {str(e)}")
-            return []
-    
-    def load_visited_pages(self):
-        """Load the set of visited pages from disk"""
-        if os.path.exists(self.visited_file):
-            with open(self.visited_file, 'r') as f:
-                return set(json.load(f))
-        return set()
-    
-    def save_visited_pages(self):
-        """Save the set of visited pages to disk"""
-        with open(self.visited_file, 'w') as f:
-            json.dump(list(self.visited_pages), f)
+            return set()
     
     def wait_for_rate_limit(self):
-        """Implement rate limiting using sliding window"""
-        with self.request_lock:
-            now = datetime.now()
+        """Implement rate limiting per thread"""
+        try:
+            current_time = time.time()
             
-            # Remove old requests from the window
-            while self.request_times and (now - self.request_times[0]).total_seconds() > self.request_window:
-                self.request_times.popleft()
+            # Initialize thread-local last_request_time if not exists
+            if not hasattr(self._thread_local, 'last_request_time'):
+                self._thread_local.last_request_time = 0
             
-            # If we've hit the limit, wait until we can make another request
-            if len(self.request_times) >= self.max_requests:
-                sleep_time = (self.request_times[0] + timedelta(seconds=self.request_window) - now).total_seconds()
-                time.sleep(max(0, sleep_time))
+            time_since_last = current_time - self._thread_local.last_request_time
             
-            # Add current request to the window
-            self.request_times.append(now)
+            if time_since_last < self.min_request_interval:
+                sleep_time = max(0.1, self.min_request_interval - time_since_last)
+                time.sleep(sleep_time)
+            
+            self._thread_local.last_request_time = time.time()
+            return True
+        except Exception as e:
+            print(f"Error in rate limiting: {str(e)}")
+            return False
 
     def get_backoff_delay(self, url):
         """Calculate exponential backoff delay based on error count"""
@@ -167,12 +202,17 @@ class WikiCrawler:
         retries = 0
         while retries < max_retries:
             try:
+                print(f"Attempting download of {url}")
                 # Wait for rate limit
-                self.wait_for_rate_limit()
+                if not self.wait_for_rate_limit():
+                    print("Rate limiting failed, retrying...")
+                    time.sleep(1)
+                    continue
                 
                 # Make the request
                 req = urllib.request.Request(url, headers=self.headers)
                 with urllib.request.urlopen(req) as response:
+                    print(f"Download successful for {url}")
                     content = response.read().decode('utf-8')
                 
                 # Reset error count on success
@@ -184,6 +224,7 @@ class WikiCrawler:
             except urllib.error.HTTPError as e:
                 if e.code == 429:  # Too Many Requests
                     print(f"Rate limited on {url}, backing off...")
+                    time.sleep(5 + random.random() * 5)
                 elif e.code >= 500:
                     print(f"Server error {e.code} on {url}, retrying...")
                 else:
@@ -191,7 +232,7 @@ class WikiCrawler:
                     raise
             except Exception as e:
                 print(f"Error downloading {url}: {str(e)}")
-                
+            
             # Increment error count and calculate backoff
             with self.error_lock:
                 self.error_counts[url] = self.error_counts.get(url, 0) + 1
@@ -206,12 +247,8 @@ class WikiCrawler:
     def download_page(self, url):
         """Download a single page and save it to the output directory"""
         try:
-            if self.max_pages and self.pages_downloaded >= self.max_pages:
-                return
-            
-            # Skip if URL was already visited
+            # Quick check without lock first
             if url in self.visited_pages:
-                print(f"Skipping already visited: {url}")
                 return
             
             # Create filenames
@@ -220,54 +257,60 @@ class WikiCrawler:
             html_filename = os.path.join(self.html_dir, f"{safe_name}.html")
             md_filename = os.path.join(self.markdown_dir, f"{safe_name}.md")
             
-            # Skip if both files already exist
+            # Skip if files exist
             if os.path.exists(html_filename) and os.path.exists(md_filename):
-                self.visited_pages.add(url)
+                with self.visited_lock:
+                    self.visited_pages.add(url)
                 return
             
-            # Download with retry logic
-            content = self.download_with_retry(url)
+            # Double-check with lock
+            with self.visited_lock:
+                if url in self.visited_pages:
+                    return
             
-            # Process the content
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting download: {page_name}")
+            
+            # Download and process content
+            content = self.download_with_retry(url)
             soup = BeautifulSoup(content, 'html.parser')
             main_content = soup.find('div', id='content')
             
             if main_content:
-                # Save files with atomic writes
+                # Write files without holding locks
                 tmp_html = html_filename + '.tmp'
                 tmp_md = md_filename + '.tmp'
                 
                 try:
-                    # Write HTML
                     with open(tmp_html, 'w', encoding='utf-8') as f:
                         f.write(str(main_content))
                     os.replace(tmp_html, html_filename)
                     
-                    # Convert and write markdown
                     markdown = parse_wiki_page(str(main_content))
                     with open(tmp_md, 'w', encoding='utf-8') as f:
                         f.write(markdown)
                     os.replace(tmp_md, md_filename)
                     
-                    print(f"Downloaded: {page_name}")
-                    self.pages_downloaded += 1
+                    # Update counters and visited pages at the end
+                    with self._counter_lock:
+                        self.pages_downloaded += 1
+                        downloaded = self.pages_downloaded
+                    
+                    with self.visited_lock:
+                        self.visited_pages.add(url)
+                    
+                    print(f"[{datetime.now().strftime('%H:%M:%S')}] Successfully downloaded ({downloaded} total): {page_name}")
                     
                 finally:
-                    # Clean up temp files if they exist
                     for tmp_file in (tmp_html, tmp_md):
                         try:
                             if os.path.exists(tmp_file):
                                 os.remove(tmp_file)
                         except:
                             pass
-            
-            # Mark as visited and save periodically
-            self.visited_pages.add(url)
-            if len(self.visited_pages) % 10 == 0:
-                self.save_visited_pages()
-            
+                        
         except Exception as e:
-            print(f"Error processing {url}: {str(e)}")
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Error downloading {url}: {str(e)}")
+            raise
     
     def get_page_content(self, url):
         """Get the content of a page"""
@@ -322,7 +365,10 @@ class WikiCrawler:
             print(f"Error processing batch: {str(e)}")
 
     def crawl(self):
-        """Start the crawling process using multiprocessing and multithreading"""
+        """Start the crawling process using batched multithreading"""
+        start_time = time.time()
+        print(f"\n[{datetime.now().strftime('%H:%M:%S')}] Starting crawler...")
+        
         print("Checking for sitemap updates...")
         if self.check_and_download_latest_sitemap():
             print("Downloaded new sitemap file")
@@ -338,37 +384,89 @@ class WikiCrawler:
             return
         
         # Filter out already visited URLs
-        urls = [url for url in urls if url not in self.visited_pages]
+        with self.visited_lock:
+            urls = [url for url in urls if url not in self.visited_pages]
         print(f"{len(urls)} URLs remaining after filtering visited pages")
         
         if self.max_pages:
-            urls = urls[:self.max_pages - self.pages_downloaded]
-
-        try:
-            # Calculate number of processes and batch size
-            num_processes = multiprocessing.cpu_count()
-            batch_size = max(1, len(urls) // (num_processes * 4))  # Divide URLs into smaller batches
-            
-            # Create batches of URLs
-            url_batches = [
-                urls[i:i + batch_size] 
-                for i in range(0, len(urls), batch_size)
-            ]
-            
-            print(f"Using {num_processes} processes with {self.threads} threads each")
-            print(f"Split {len(urls)} URLs into {len(url_batches)} batches")
-
-            # Process URL batches using multiple processes
-            with Pool(processes=num_processes) as pool:
-                pool.map(self.process_url_batch, url_batches)
+            with self._counter_lock:
+                urls = list(islice(urls, self.max_pages - self.pages_downloaded))
+                print(f"Limited to {len(urls)} URLs due to max_pages setting")
         
+        # Split URLs into batches
+        url_batches = [urls[i:i + self.batch_size] for i in range(0, len(urls), self.batch_size)]
+        total_batches = len(url_batches)
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] "
+              f"Split {len(urls)} URLs into {total_batches} batches of {self.batch_size}")
+        
+        completed_batches = 0
+        
+        try:
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] "
+                  f"Starting downloads with {self.threads} threads...")
+            
+            with ThreadPoolExecutor(max_workers=self.threads) as executor:
+                futures = [executor.submit(self.process_batch, batch) for batch in url_batches]
+                
+                for i, future in enumerate(futures):
+                    try:
+                        future.result(timeout=120)  # 2 minute timeout per batch
+                        completed_batches += 1
+                        elapsed = time.time() - start_time
+                        avg_time = elapsed / completed_batches
+                        remaining = (total_batches - completed_batches) * avg_time
+                        
+                        print(f"[{datetime.now().strftime('%H:%M:%S')}] "
+                              f"Completed batch {completed_batches}/{total_batches} "
+                              f"(Avg: {avg_time:.1f}s/batch, "
+                              f"Est. remaining: {remaining/60:.1f}min)")
+                        
+                    except TimeoutError:
+                        print(f"[{datetime.now().strftime('%H:%M:%S')}] Batch {i+1} timed out")
+                    except Exception as e:
+                        print(f"[{datetime.now().strftime('%H:%M:%S')}] "
+                              f"Error processing batch {i+1}: {str(e)}")
+            
         except Exception as e:
-            print(f"Error during crawling: {str(e)}")
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Error during crawling: {str(e)}")
+            import traceback
+            traceback.print_exc()
             
         finally:
-            # Save visited pages after completion
+            elapsed = time.time() - start_time
             self.save_visited_pages()
-            print(f"\nCrawling completed. Downloaded {self.pages_downloaded} pages.")
+            print(f"\n[{datetime.now().strftime('%H:%M:%S')}] "
+                  f"Crawling completed in {elapsed/60:.1f} minutes. "
+                  f"Downloaded {self.pages_downloaded} pages.")
+
+    def process_batch(self, urls):
+        """Process a batch of URLs in parallel"""
+        total = len(urls)
+        completed = 0
+        
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting batch of {total} URLs")
+        start_time = time.time()
+        
+        with ThreadPoolExecutor(max_workers=self.threads) as executor:
+            futures = [executor.submit(self.download_page, url) for url in urls]
+            
+            for future in futures:
+                try:
+                    future.result()
+                    completed += 1
+                    
+                    if completed % 5 == 0 or completed == total:
+                        elapsed = time.time() - start_time
+                        avg_time = elapsed / completed
+                        remaining = (total - completed) * avg_time
+                        print(f"[{datetime.now().strftime('%H:%M:%S')}] "
+                              f"Batch progress: {completed}/{total} URLs "
+                              f"(Avg: {avg_time:.1f}s/URL, "
+                              f"Est. remaining: {remaining:.1f}s)")
+                        
+                except Exception as e:
+                    print(f"[{datetime.now().strftime('%H:%M:%S')}] "
+                          f"Error processing URL in batch ({completed}/{total}): {str(e)}")
 
 def main():
     parser = argparse.ArgumentParser(description='OSRS Wiki Crawler')
